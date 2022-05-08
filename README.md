@@ -131,3 +131,10 @@ The following instructions all pertain to `provider/resources.go`, in the sectio
 **Note:** If you make revisions to code in `resources.go`, you must re-run the `make tfgen` target to regenerate the schema.
 The `make tfgen` target will take the file `schema.json` and serialize it to a byte array so that it can be included in the build output.
 (This is a holdover from Go 1.16, which does not have the ability to directly embed text files. We are working on removing the need for this step.)
+
+
+
+### Terraform provider Upgradtion
+    Understanding the upgrade process by reading terraform documenation and 
+    Change the go files dependencies to "github.com/hashicorp/terraform-plugin-sdk/v2"
+
